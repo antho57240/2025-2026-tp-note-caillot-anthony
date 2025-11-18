@@ -21,10 +21,13 @@
 
 ## Fonctionnalités bonus
 
-- Quand on supprime une annonce des favoris, un message notifie l'utilisateur de la suppression.
 - Recherche étendue sur plusieurs champs : poste, entreprise et ville.
 - Tri des annonces sur la page d’accueil :
   - Bouton `Trier par date` (choix entre date décroissant/croissant)
   - Bouton `Trier par salaire` (choix entre salaire décroissant/croissant).
+- Dans le détail d'une annonce :
   - Un clic sur le numéro de téléphone propose d'appeler le numéro de téléphone.
   - Un clic sur l'e-mail ouvre l'application "MAIL", et rempli le destinataire avec l'adresse.
+- Favoris :
+  - Quand on supprime une annonce des favoris, un message notifie l'utilisateur de la suppression.
+  - Dans les Favoris, on peut aussi trier par Date (décroissant/croissant) ou Salaire (décroissant/croissant)

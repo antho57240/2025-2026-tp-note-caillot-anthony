@@ -51,7 +51,7 @@ export const JobDetails = ({ route }: JobDetailsProps) => {
   };
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
+    <ScrollView style={styles.screen} contentContainerStyle={styles.container}>
       <Text variant="titleLarge" style={styles.title}>
         {job.poste}
       </Text>
@@ -118,6 +118,10 @@ export const JobDetails = ({ route }: JobDetailsProps) => {
 };
 
 const styles = StyleSheet.create({
+  screen: {
+    flex: 1,
+    backgroundColor: "#f4f5f7",
+  },
   container: {
     padding: 16,
     paddingBottom: 32,

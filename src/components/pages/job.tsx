@@ -62,8 +62,18 @@ const JobsPage = () => {
     return sorted;
   }, [search, sortKey, sortOrder]);
 
+  const jobsCountLabel = (() => {
+    if (filteredJobs.length === 0) {
+      return "Aucune annonce disponible";
+    }
+    if (filteredJobs.length === 1) {
+      return "1 annonce disponible";
+    }
+    return `${filteredJobs.length} annonces disponibles`;
+  })();
+
   return (
-    <ScrollView>
+    <ScrollView style={styles.screen}>
       <View style={styles.container}>
         <Button
           mode="contained"
@@ -91,9 +101,7 @@ const JobsPage = () => {
           }
         />
 
-        <Text style={styles.countText}>
-          Nombre d&apos;annonces : {filteredJobs.length}
-        </Text>
+        <Text style={styles.countText}>{jobsCountLabel}</Text>
 
         <JobList jobs={filteredJobs} />
       </View>
@@ -102,6 +110,10 @@ const JobsPage = () => {
 };
 
 const styles = StyleSheet.create({
+  screen: {
+    flex: 1,
+    backgroundColor: "#f4f5f7",
+  },
   container: {
     flex: 1,
     alignItems: "stretch",
@@ -110,14 +122,17 @@ const styles = StyleSheet.create({
   favouriteButton: {
     alignSelf: "center",
     marginBottom: 16,
+    borderRadius: 24,
+    paddingHorizontal: 8,
   },
   searchInput: {
     marginHorizontal: 16,
-    marginBottom: 8,
+    marginBottom: 12,
   },
   countText: {
     marginHorizontal: 16,
     marginBottom: 8,
+    color: "#555555",
   },
 });
 

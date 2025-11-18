@@ -53,33 +53,34 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     marginHorizontal: 16,
-    marginBottom: 8,
+    marginBottom: 12,
   },
   left: {
     flexDirection: "row",
     gap: 8,
   },
   button: {
-    paddingHorizontal: 12,
+    paddingHorizontal: 14,
     paddingVertical: 8,
-    borderRadius: 16,
-    backgroundColor: "#eaeaea",
+    borderRadius: 18,
+    backgroundColor: "#e8ecf2",
   },
   buttonActive: {
-    backgroundColor: "#a0b8dfff",
+    backgroundColor: "#2ecc71",
   },
   buttonText: {
-    color: "#111",
+    color: "#111111",
     fontWeight: "700",
   },
   order: {
     paddingHorizontal: 12,
     paddingVertical: 8,
-    borderRadius: 16,
-    backgroundColor: "#dcdcdc",
+    borderRadius: 18,
+    backgroundColor: "#e8ecf2",
   },
   orderText: {
     fontWeight: "700",
+    color: "#111111",
   },
 });
 
