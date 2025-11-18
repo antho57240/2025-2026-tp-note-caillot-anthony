@@ -99,7 +99,7 @@ export const JobDetails = ({ route }: JobDetailsProps) => {
 
       <Button
         mode="contained"
-        buttonColor="#2ecc71"
+        buttonColor="#6d8ec1ff"
         style={styles.favouriteButton}
         onPress={handleFavouritePress}
       >

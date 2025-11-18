@@ -67,7 +67,7 @@ const JobsPage = () => {
       <View style={styles.container}>
         <Button
           mode="contained"
-          buttonColor="#7895ffff"
+          buttonColor="#537cbaff"
           style={styles.favouriteButton}
           onPressOut={() => navigation.navigate("Favorites")}
         >
